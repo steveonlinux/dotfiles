@@ -1,0 +1,3 @@
+plugins = [
+    { local = "/home/steve/dl/gh_cl/split-monitor-workspaces" },
+]

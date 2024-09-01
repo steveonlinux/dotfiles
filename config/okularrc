@@ -1,0 +1,44 @@
+[Desktop Entry]
+FullScreen=false
+shouldShowMenuBarComingFromFullScreen=true
+shouldShowToolBarComingFromFullScreen=true
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+1128x752 screen: Window-Maximized=true
+2256x1504 screen: Window-Maximized=true
+RestorePositionForNextInstance=false
+ToolBarsMovable=Disabled
+eDP-1 Height 1128x752=752
+eDP-1 Height 2256x1504=1372
+eDP-1 Width 1128x752=1128
+eDP-1 Width 2256x1504=2174
+eDP-1 Window-Maximized 1128x752=true
+eDP-1 Window-Maximized 1128x752 eDP-1=true
+eDP-1 XPosition 2256x1504=40
+eDP-1 YPosition 2256x1504=90
+
+[Recent Files]
+File1[$e]=$HOME/docs/books/textbooks/linux/Linux system programming talking directly to the kernel and C library by Robert Love (z-lib.org).pdf
+File10[$e]=$HOME/dl/20240634ddb7c8-0223-42b8-bc16-951971352fd3_Proposed-InformationOfficerI(Specialist)DutyStatement-Final-05-17-24smok.pdf
+File2[$e]=$HOME/docs/books/textbooks/linux/UNIX and Linux System Administration Handbook by Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley, Dan Mackin (z-lib.org).pdf
+File3[$e]=$HOME/docs/PHQ(2024) - SO - Stephen Marks.pdf
+File4[$e]=$HOME/docs/work/Academic_Transcipt_Stephen_Marks.pdf
+File5[$e]=$HOME/docs/work/resumes/resume_stephen_marks.pdf
+File6[$e]=$HOME/docs/CompTIA Linux+ ce certificate.pdf
+File7[$e]=$HOME/docs/work/resumes/resume_stephen_marks_associate.pdf
+File8[$e]=$HOME/docs/20240614751c54-0c37-4245-9c83-acfb2c8e32c8_ITA420-861-1401-004-LinuxAdministrator.pdf
+File9[$e]=$HOME/resume.pdf
+Name1[$e]=Linux system programming talking directly to the kernel and C library by Robert Love (z-lib.org).pdf
+Name10[$e]=20240634ddb7c8-0223-42b8-bc16-951971352fd3_Proposed-InformationOfficerI(Specialist)DutyStatement-Final-05-17-24smok.pdf
+Name2[$e]=UNIX and Linux System Administration Handbook by Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley, Dan Mackin (z-lib.org).pdf
+Name3[$e]=PHQ(2024) - SO - Stephen Marks.pdf
+Name4[$e]=Academic_Transcipt_Stephen_Marks.pdf
+Name5[$e]=resume_stephen_marks.pdf
+Name6[$e]=CompTIA Linux+ ce certificate.pdf
+Name7[$e]=resume_stephen_marks_associate.pdf
+Name8[$e]=20240614751c54-0c37-4245-9c83-acfb2c8e32c8_ITA420-861-1401-004-LinuxAdministrator.pdf
+Name9[$e]=resume.pdf
