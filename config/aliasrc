@@ -1,25 +1,44 @@
-####AUTOSTART#### ./scr/catsee.sh neofetch export SHELL="zsh" export PF_INFO="ascii title os kernel wm shell uptime pkgs memory " export PF_COL3=3 export PF_COL1=2
-#pfetch
+####AUTOSTART####
+#./scr/catsee.sh
+#neofetch
+export SHELL="zsh"
+export PF_INFO="ascii title os kernel wm shell uptime pkgs memory"
+export PF_COL3=3
+export PF_COL1=2
 fastfetch --logo arch3
+
 ####ALIASES####
-alias cp="cp -i"                          # confirm before overwriting something
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
-alias more=less
-alias ls="exa -l"
-alias la="exa -la"
-alias rm="rm -i"
+
+# File Management
+alias cp="cp -i"                          # Confirm before overwriting something
+alias rm="rm -i"                          # Confirm before removing something
+alias ls="exa -l"                         # Modern replacement for ls
+alias la="exa -la"                        # List all with details
+alias more=less                           # Use less instead of more
+
+# System Operations
 alias reb="doas reboot now"
 alias re="doas shutdown now"
 alias pacs="doas pacman -Syu"
 alias pacR="doas pacman -R"
 alias pacS="doas pacman -S"
 alias pacQ="doas pacman -Q"
+alias pacsize="expac -s \"%-30n %m\" -H M | sort -rhk 2 | less"
+alias deorphan="doas pacman -Qtdq | doas pacman -Rns -"
+alias killorphans='doas pacman -Rns $(pacman -Qdtq)'
+alias df='df -h'                          # Human-readable sizes
+alias free='free -m'                      # Show sizes in MB
+
+# Editing and Configuration
 alias bashrc="nvim ~/.bashrc"
 alias qt="nvim ~/.config/qtile/config.py"
+alias hypr="lvim ~/.config/hypr/hyprland.conf"
+alias np='nano -w PKGBUILD'
+
+# Remote and SSH Commands
+
+# Scripts and Utilities
 alias pia="cd / && ./opt/piavpn/bin/pia-client && disown"
-alias pi="ssh pi@192.168.86.240"
 alias dm="bash ~/Downloads/Github_Clones/dmscripts/dmconf"
 alias redO="redshift -O 3000"
 alias redx="redshift -x"
@@ -27,73 +46,91 @@ alias pk="pulseaudio -k"
 alias pst="pulseaudio --start"
 alias scr="scrot --select"
 alias nv="neovide"
-alias b13="ssh stephen.marks5309@bmit-compile.kccd.edu"
 alias compb13="cd ~/Documents/Spring_2021/COMP_B13"
-alias icat="kitty +kitten icat"
-#alias feh="devour feh"
-#alias mpv="devour mpv"
-#alias gparted="devour doas gparted" 
-#alias nv="devour neovide"
-#alias zat="devour zathura"
-alias left="cd $HOME/.config/leftwm/"
-alias poly="devour neovide $HOME/.config/leftwm/themes/basic_polybar/polybar.config"
-alias bt="bluetoothctl"
-alias bl="doas bl"
-alias pacsize="expac -s \"%-30n %m\" -H M | sort -rhk 2 | less" 
-alias deorphan="doas pacman -Qtdq | doas pacman -Rns -"
-alias gsO="gammastep -P -O 3000 & disown"
-alias gsx="gammastep -x & disown"
-alias csubarm="ssh Stephen2238@fenrir.cs.csubak.edu"
-alias odin="ssh smarks@odin.cs.csubak.edu"
-
-alias ss='hyprctl -j activewindow | jq -r '\''(.at[0]|tostring) + "," + (.at[1]|tostring) + " " + (.size[0]|tostring) + "x" + (.size[1]|tostring)'\'' | grim -g - screenshot.png'
 alias mull='mull.sh'
 alias power='doas power.sh'
-alias killorphans='doas pacman -Rns $(pacman -Qdtq)'
-alias lv='lvim'
-
+alias gsO="gammastep -P -O 3000 & disown"
+alias gsx="gammastep -x & disown"
+alias bt="bluetoothctl"
+alias bl="doas bl"
 alias site='cd /home/steve/scr/personal_site/steve_site'
+alias lv="lvim"
+
+# Git Shortcuts
+alias gs='git status'
+alias ga='git add'
+alias gp='git push'
+alias gc='git commit'
+alias gco='git checkout'
+alias gl='git log --oneline --graph --decorate --all'
+alias gb='git branch'
+
+# Docker Shortcuts
+alias dps='docker ps'
+alias di='docker images'
+alias dnet='docker network ls'
+alias drm='docker rm $(docker ps -a -q) -f'
+alias drmi='docker rmi $(docker images -q) -f'
+
+# Tmux Helper Function
+function tmux_new() {
+  if [ -z "$TMUX" ]; then
+    tmux attach -t "$1" || tmux new -s "$1"
+  else
+    tmux new -t "$1"
+  fi
+}
+
+# Enhanced Command-Line Tools
+alias ss='hyprctl -j activewindow | jq -r '\''(.at[0]|tostring) + "," + (.at[1]|tostring) + " " + (.size[0]|tostring) + "x" + (.size[1]|tostring)'\'' | grim -g - screenshot.png'
+
+# Networking and Monitoring Tools
+alias sniff='sudo ngrep -d any -t "^(GET|POST) " "tcp port 80"'
+alias ports='netstat -tulanp'
+alias topmem='ps auxf | sort -nr -k 4 | head -10'
+alias topcpu='ps auxf | sort -nr -k 3 | head -10'
+alias usage='du -sh * 2>/dev/null | sort -h'
+
+# Enhanced Navigation (autojump)
+if [ -f /usr/share/autojump/autojump.sh ]; then
+    . /usr/share/autojump/autojump.sh
+fi
+
+# Set default editor
+export EDITOR=lvim
+export VISUAL=$EDITOR
 
 ####PATHS####
-export PATH="$PATH:/home/steve/Documents/Spring_2021/COMP_B13"
-export PATH="$PATH:/home/steve/bin"
-export PATH="$PATH:/home/steve/.local/bin"
-export PATH="$PATH:/home/steve/.emacs.d/bin"
-export PATH="$PATH:/home/steve/Scripts/catsee"
-export PATH="$PATH:/home/steve/.cargo/bin"
-export PATH="$PATH:/home/steve/scr"
+export PATH="$PATH:/home/steve/Documents/Spring_2021/COMP_B13:/home/steve/bin:/home/steve/.local/bin:/home/steve/.emacs.d/bin:/home/steve/Scripts/catsee:/home/steve/.cargo/bin:/home/steve/scr"
+export PATH=/home/$USER/.config/nvcode/utils/bin:$PATH
 
 ####MANPAGER####
-#export MANPAGER="nvim -c 'set ft=man' -"
-#export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
-export PATH=/home/$USER/.config/nvcode/utils/bin:$PATH
 export MANPAGER='lvim +Man!'
 
 ####XDG BASE DIRECTORY WORKAROUNDS####
-#https://wiki.archlinux.org/title/XDG_Base_Directory
 export ANSIBLE_HOME="${XDG_CONFIG_HOME}/ansible"
 export ANSIBLE_CONFIG="${XDG_CONFIG_HOME}/ansible.cfg"
 export ANSIBLE_GALAXY_CACHE_DIR="${XDG_CACHE_HOME}/ansible/galaxy_cache"
 
 ####ARCHIVE EXTRACTOR####
-ex ()
-{
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1     ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
+ex () {
+  if [ -f "$1" ]; then
+    case "$1" in
+      *.tar.bz2) tar xjf "$1" ;;
+      *.tar.gz) tar xzf "$1" ;;
+      *.bz2) bunzip2 "$1" ;;
+      *.rar) unrar x "$1" ;;
+      *.gz) gunzip "$1" ;;
+      *.tar) tar xf "$1" ;;
+      *.tbz2) tar xjf "$1" ;;
+      *.tgz) tar xzf "$1" ;;
+      *.zip) unzip "$1" ;;
+      *.Z) uncompress "$1" ;;
+      *.7z) 7z x "$1" ;;
+      *) echo "'$1' cannot be extracted via ex()" ;;
     esac
   else
     echo "'$1' is not a valid file"
   fi
 }
+
