@@ -30,23 +30,21 @@ alias df='df -h'                          # Human-readable sizes
 alias free='free -m'                      # Show sizes in MB
 
 # Editing and Configuration
-alias bashrc="nvim ~/.bashrc"
-alias qt="nvim ~/.config/qtile/config.py"
+alias bashrc="lvim ~/.bashrc"
+alias aliasrc="lvim ~/.config/aliasrc"
+alias qt="lvim ~/.config/qtile/config.py"
 alias hypr="lvim ~/.config/hypr/hyprland.conf"
 alias np='nano -w PKGBUILD'
 
 # Remote and SSH Commands
 
 # Scripts and Utilities
-alias pia="cd / && ./opt/piavpn/bin/pia-client && disown"
-alias dm="bash ~/Downloads/Github_Clones/dmscripts/dmconf"
 alias redO="redshift -O 3000"
 alias redx="redshift -x"
 alias pk="pulseaudio -k"
 alias pst="pulseaudio --start"
 alias scr="scrot --select"
 alias nv="neovide"
-alias compb13="cd ~/Documents/Spring_2021/COMP_B13"
 alias mull='mull.sh'
 alias power='doas power.sh'
 alias gsO="gammastep -P -O 3000 & disown"
