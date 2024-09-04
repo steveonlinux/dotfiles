@@ -167,15 +167,16 @@ bindsym $mod+x mode "resize"
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
+#    position top
 
-    status_command while $HOME/.config/sway/status.sh;do sleep 5;done
+#    status_command while $HOME/.config/sway/status.sh;do sleep 5;done
+     swaybar_command waybar
 
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+#    colors {
+#        statusline #ffffff
+#        background #323232
+#        inactive_workspace #32323200 #32323200 #5c5c5c
+#    }
 }
 
 include /etc/sway/config.d/*
@@ -187,9 +188,9 @@ include /etc/sway/config.d/*
 set $wall $HOME/dl/wlp/next_gen_crew_x3.jpg
 
 #SET SCREEN
-output eDP-1 mode 2256x1504@60Hz bg $wall fill scale 2
+output eDP-1 mode 2256x1504@60Hz bg $wall fill scale 1
 output HDMI-A-1 mode 1920x1080@60Hz bg $wall fill scale 2
-xwayland scale 2
+#xwayland scale 2
 
 #NO BORDERS
 #default_border none
@@ -202,8 +203,16 @@ client.focused "#0DB1EA" "#0DB1EA" "#ffffff" "#0DB1EA"
 gaps inner 15
 
 #PROGRAMS
-bindsym $mod+b exec brave
+bindsym $mod+b exec floorp
 bindsym $mod+Shift+Return exec st
 
 #ROOT APPLICATIONS
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# CLICK ON TAP
+input "type:touchpad" {
+    dwt enabled
+    dwtp enabled
+    tap enabled
+    tap_button_map lrm
+}

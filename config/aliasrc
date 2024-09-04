@@ -32,6 +32,7 @@ alias free='free -m'                      # Show sizes in MB
 # Editing and Configuration
 alias bashrc="lvim ~/.bashrc"
 alias aliasrc="lvim ~/.config/aliasrc"
+alias dots="cd ~/scr/dots/"
 alias qt="lvim ~/.config/qtile/config.py"
 alias hypr="lvim ~/.config/hypr/hyprland.conf"
 alias np='nano -w PKGBUILD'
