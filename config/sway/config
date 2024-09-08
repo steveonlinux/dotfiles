@@ -216,3 +216,42 @@ input "type:touchpad" {
     tap enabled
     tap_button_map lrm
 }
+
+# Function Keys
+
+# Bind F1 to mute audio
+bindsym XF86AudioMute exec ~/scr/framework/f1_mute_audio.sh
+
+# Bind F2 to lower volume
+bindsym XF86AudioLowerVolume exec ~/scr/framework/f2_lower_volume.sh
+
+# Bind F3 to raise volume
+bindsym XF86AudioRaiseVolume exec ~/scr/framework/f3_raise_volume.sh
+
+# Bind F4 to previous track
+bindsym XF86AudioPrev exec ~/scr/framework/f4_previous_track.sh
+
+# Bind F5 to play/pause
+bindsym XF86AudioPlay exec ~/scr/framework/f5_play_pause.sh
+
+# Bind F6 to next track
+bindsym XF86AudioNext exec ~/scr/framework/f6_next_track.sh
+
+# Bind F7 to decrease brightness
+bindsym XF86MonBrightnessDown exec ~/scr/framework/f7_decrease_brightness.sh
+
+# Bind F8 to increase brightness
+bindsym XF86MonBrightnessUp exec ~/scr/framework/f8_increase_brightness.sh
+
+# Bind F9 to display projection (assumed)
+bindsym XF86Display exec ~/scr/framework/f9_display_projection.sh
+
+# Bind F10 to toggle WiFi
+bindsym XF86WLAN exec ~/scr/framework/f10_toggle_wifi.sh
+
+# Bind F11 to Print Screen
+bindsym Print exec ~/scr/framework/f11_screenshot.sh
+
+# Bind F12 to media (custom action; symbol may vary)
+bindsym XF86Tools exec ~/scr/framework/f12_media.sh
+
