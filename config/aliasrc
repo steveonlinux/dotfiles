@@ -28,6 +28,7 @@ alias deorphan="doas pacman -Qtdq | doas pacman -Rns -"
 alias killorphans='doas pacman -Rns $(pacman -Qdtq)'
 alias df='df -h'                          # Human-readable sizes
 alias free='free -m'                      # Show sizes in MB
+alias icat='kitty +kitten icat'
 
 # Editing and Configuration
 alias bashrc="lvim ~/.bashrc"
