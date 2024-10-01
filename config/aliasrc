@@ -23,6 +23,7 @@ alias pacs="doas pacman -Syu"
 alias pacR="doas pacman -R"
 alias pacS="doas pacman -S"
 alias pacQ="doas pacman -Q"
+alias hl="Hyprland"
 alias pacsize="expac -s \"%-30n %m\" -H M | sort -rhk 2 | less"
 alias deorphan="doas pacman -Qtdq | doas pacman -Rns -"
 alias killorphans='doas pacman -Rns $(pacman -Qdtq)'
@@ -55,6 +56,7 @@ alias bt="bluetoothctl"
 alias bl="doas bl"
 alias site='cd /home/steve/scr/personal_site/steve_site'
 alias lv="lvim"
+alias gparted="xhost +SI:localuser:root && doas gparted && xhost -SI:localuser:root"
 
 # Git Shortcuts
 alias gs='git status'
