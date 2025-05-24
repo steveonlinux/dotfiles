@@ -9,7 +9,8 @@ set $right l
 # Your preferred terminal emulator
 set $term kitty
 # Your preferred application launcher
-set $menu rofi -show run -theme fancy | xargs swaymsg exec --
+set $menu tofi-drun -c .config/sway/tofi.conf --drun-launch=true | xargs swaymsg exec --
+#set $menu rofi -show run -theme fancy | xargs swaymsg exec --
 ### Key bindings
 #
 # Basics:
@@ -183,13 +184,15 @@ include /etc/sway/config.d/*
 
 #SET WALLPAPER
 #set $wall /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_2048x1536.png
-#set $wall $HOME/dl/wlp/next_gen_female_crew_auto_x2.jpg
+set $wall $HOME/dl/wlp/next_gen_female_crew_auto_x2.jpg
 #set $wall $HOME/dl/wlp/sg-1_crew2.jpg
-set $wall $HOME/dl/wlp/next_gen_crew_x3.jpg
+#set $wall $HOME/dl/wlp/next_gen_crew_x3.jpg
 
 #SET SCREEN
+output "*" bg $wall fill
 output eDP-1 mode 2256x1504@60Hz bg $wall fill scale 1
-output HDMI-A-1 mode 1920x1080@60Hz bg $wall fill scale 2
+#output eDP-1 resolution 1920x1080 bg $wall fill scale 1 position 0,0
+#output HDMI-A-1 mode 1920x1080@60Hz bg $wall fill scale 2
 #xwayland scale 2
 
 #NO BORDERS
