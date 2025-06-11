@@ -21,26 +21,26 @@ eDP-1 XPosition 2256x1504=40
 eDP-1 YPosition 2256x1504=90
 
 [Recent Files]
-File1[$e]=$HOME/docs/school/math_roadmap_bs.pdf
-File10[$e]=$HOME/docs/math/real_anal/Basic Analysis_ Introduction to Real Analysis - mit18_100af20_basic_analysis.pdf
-File2[$e]=$HOME/docs/school/phil_minor.pdf
-File3[$e]=$HOME/docs/school/phys_minor.pdf
-File4[$e]=$HOME/docs/school/Academic Renewal Policy - AcademicRenewal.pdf
-File5[$e]=$HOME/docs/school/AcademicRenewal.pdf
-File6[$e]=$HOME/docs/mini_rack.md
-File7[$e]=$HOME/docs/work/resumes/it/stephen_marks_admin_resume.pdf
-File8[$e]=$HOME/docs/work/resumes/it/stephen_marks_it_resume.pdf
-File9[$e]=$HOME/docs/work/resumes/it/stephen_marks_resume.pdf
-Name1[$e]=math_roadmap_bs.pdf
-Name10[$e]=Basic Analysis_ Introduction to Real Analysis - mit18_100af20_basic_analysis.pdf
-Name2[$e]=phil_minor.pdf
-Name3[$e]=phys_minor.pdf
-Name4[$e]=Academic Renewal Policy - AcademicRenewal.pdf
-Name5[$e]=AcademicRenewal.pdf
-Name6[$e]=mini_rack.md
-Name7[$e]=stephen_marks_admin_resume.pdf
-Name8[$e]=stephen_marks_it_resume.pdf
-Name9[$e]=stephen_marks_resume.pdf
+File1[$e]=$HOME/docs/mcs.pdf
+File10[$e]=$HOME/docs/math/proofing/Velleman. - How to Prove It_ A Structured Approach (2019).pdf
+File2[$e]=$HOME/docs/school/summer_25/aa_hist/academic_renewal_petition_stephen_marks.pdf
+File3[$e]=$HOME/docs/school/summer_25/aa_hist/Douglass_1349_EBk_v6.0.pdf
+File4[$e]=$HOME/docs/school/summer_25/aa_hist/syllabus.md
+File5[$e]=$HOME/docs/hr2.md
+File6[$e]=$HOME/dl/Resume202203191003.pdf
+File7[$e]=$HOME/docs/temp_dl.pdf
+File8[$e]=$HOME/docs/math/proofing/book.DVI - Daniel Solow - How to Read and Do Proofs_ An Introduction to Mathematical Thought Processes (2013, Wiley) - libgen.li.pdf
+File9[$e]=$HOME/docs/math/proofing/book_of_proof.pdf
+Name1[$e]=mcs.pdf
+Name10[$e]=Velleman. - How to Prove It_ A Structured Approach (2019).pdf
+Name2[$e]=academic_renewal_petition_stephen_marks.pdf
+Name3[$e]=Douglass_1349_EBk_v6.0.pdf
+Name4[$e]=syllabus.md
+Name5[$e]=hr2.md
+Name6[$e]=Resume202203191003.pdf
+Name7[$e]=temp_dl.pdf
+Name8[$e]=book.DVI - Daniel Solow - How to Read and Do Proofs_ An Introduction to Mathematical Thought Processes (2013, Wiley) - libgen.li.pdf
+Name9[$e]=book_of_proof.pdf
 
 [calligra]
 DockerPlugins=calligra_docker_defaults,calligra_docker_stencils
