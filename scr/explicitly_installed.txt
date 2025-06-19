@@ -1,6 +1,7 @@
 7zip
 acpi
 adwaita-dark
+alacritty
 alsa-firmware
 alsa-oss
 alsa-plugins
@@ -375,6 +376,7 @@ xorg-xwud
 xournalpp
 xterm
 yay
+yt-dlp
 zathura-pdf-mupdf
 zoxide
 zsh

@@ -10,6 +10,7 @@ ShowSidebar=true
 [MainWindow]
 1128x752 screen: Window-Maximized=true
 2256x1504 screen: Window-Maximized=true
+MenuBar=Disabled
 RestorePositionForNextInstance=false
 eDP-1 Height 1128x752=752
 eDP-1 Height 2256x1504=1372
@@ -21,26 +22,26 @@ eDP-1 XPosition 2256x1504=40
 eDP-1 YPosition 2256x1504=90
 
 [Recent Files]
-File1[$e]=$HOME/docs/mcs.pdf
-File10[$e]=$HOME/docs/math/proofing/Velleman. - How to Prove It_ A Structured Approach (2019).pdf
-File2[$e]=$HOME/docs/school/summer_25/aa_hist/academic_renewal_petition_stephen_marks.pdf
-File3[$e]=$HOME/docs/school/summer_25/aa_hist/Douglass_1349_EBk_v6.0.pdf
-File4[$e]=$HOME/docs/school/summer_25/aa_hist/syllabus.md
-File5[$e]=$HOME/docs/hr2.md
-File6[$e]=$HOME/dl/Resume202203191003.pdf
-File7[$e]=$HOME/docs/temp_dl.pdf
-File8[$e]=$HOME/docs/math/proofing/book.DVI - Daniel Solow - How to Read and Do Proofs_ An Introduction to Mathematical Thought Processes (2013, Wiley) - libgen.li.pdf
-File9[$e]=$HOME/docs/math/proofing/book_of_proof.pdf
-Name1[$e]=mcs.pdf
-Name10[$e]=Velleman. - How to Prove It_ A Structured Approach (2019).pdf
-Name2[$e]=academic_renewal_petition_stephen_marks.pdf
-Name3[$e]=Douglass_1349_EBk_v6.0.pdf
-Name4[$e]=syllabus.md
-Name5[$e]=hr2.md
-Name6[$e]=Resume202203191003.pdf
-Name7[$e]=temp_dl.pdf
-Name8[$e]=book.DVI - Daniel Solow - How to Read and Do Proofs_ An Introduction to Mathematical Thought Processes (2013, Wiley) - libgen.li.pdf
-Name9[$e]=book_of_proof.pdf
+File1[$e]=$HOME/dl/Resume202203191003.pdf
+File10[$e]=$HOME/docs/work/resumes/it/stephen_marks_resume.pdf
+File2[$e]=$HOME/docs/temp_dl.pdf
+File3[$e]=$HOME/docs/math/proofing/book.DVI - Daniel Solow - How to Read and Do Proofs_ An Introduction to Mathematical Thought Processes (2013, Wiley) - libgen.li.pdf
+File4[$e]=$HOME/docs/math/proofing/book_of_proof.pdf
+File5[$e]=$HOME/docs/math/proofing/Velleman. - How to Prove It_ A Structured Approach (2019).pdf
+File6[$e]=$HOME/docs/school/summer_25/aa_hist/discussions/discussion_1.md
+File7[$e]=$HOME/dl/educational_purpose.pdf
+File8[$e]=$HOME/docs/work/resumes/it/stephen_marks_admin_resume.pdf
+File9[$e]=$HOME/docs/work/resumes/it/stephen_marks_it_resume.pdf
+Name1[$e]=Resume202203191003.pdf
+Name10[$e]=stephen_marks_resume.pdf
+Name2[$e]=temp_dl.pdf
+Name3[$e]=book.DVI - Daniel Solow - How to Read and Do Proofs_ An Introduction to Mathematical Thought Processes (2013, Wiley) - libgen.li.pdf
+Name4[$e]=book_of_proof.pdf
+Name5[$e]=Velleman. - How to Prove It_ A Structured Approach (2019).pdf
+Name6[$e]=discussion_1.md
+Name7[$e]=educational_purpose.pdf
+Name8[$e]=stephen_marks_admin_resume.pdf
+Name9[$e]=stephen_marks_it_resume.pdf
 
 [calligra]
 DockerPlugins=calligra_docker_defaults,calligra_docker_stencils
