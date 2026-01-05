@@ -32,11 +32,11 @@ alias free='free -m'                      # Show sizes in MB
 alias icat='kitty +kitten icat'
 
 # Editing and Configuration
-alias bashrc="lvim ~/.bashrc"
-alias aliasrc="lvim ~/.config/aliasrc"
+alias bashrc="nvim ~/.bashrc"
+alias aliasrc="nvim ~/.config/aliasrc"
 alias dots="cd ~/scr/dots/"
-alias qt="lvim ~/.config/qtile/config.py"
-alias hypr="lvim ~/.config/hypr/hyprland.conf"
+alias qt="nvim ~/.config/qtile/config.py"
+alias hypr="nvim ~/.config/hypr/hyprland.conf"
 alias np='nano -w PKGBUILD'
 
 # Remote and SSH Commands
@@ -55,7 +55,7 @@ alias gsx="gammastep -x & disown"
 alias bt="doas systemctl start bluetooth; bluetoothctl"
 alias bl="doas bl"
 alias site='cd /home/steve/scr/personal_site/steve_site'
-alias lv="lvim"
+alias lv="nvim"
 alias gparted="xhost +SI:localuser:root && doas gparted && xhost -SI:localuser:root"
 
 # Git Shortcuts
@@ -73,6 +73,10 @@ alias di='docker images'
 alias dnet='docker network ls'
 alias drm='docker rm $(docker ps -a -q) -f'
 alias drmi='docker rmi $(docker images -q) -f'
+
+# Misc
+alias sch='cd ~/docs/school/fall_25/'
+alias text='okular ~/docs/school/fall_25/math_3000/ttam.pdf ~/docs/school/fall_25/math_3000/ttam.pdf ~/docs/school/fall_25/math_3500/cva.pdf'
 
 # Tmux Helper Function
 function tmux_new() {
@@ -99,7 +103,7 @@ if [ -f /usr/share/autojump/autojump.sh ]; then
 fi
 
 # Set default editor
-export EDITOR=lvim
+export EDITOR=nvim
 export VISUAL=$EDITOR
 
 ####PATHS####
@@ -107,7 +111,7 @@ export PATH="$PATH:/home/steve/Documents/Spring_2021/COMP_B13:/home/steve/bin:/h
 export PATH=/home/$USER/.config/nvcode/utils/bin:$PATH
 
 ####MANPAGER####
-export MANPAGER='lvim +Man!'
+export MANPAGER='nvim +Man!'
 
 ####XDG BASE DIRECTORY WORKAROUNDS####
 export ANSIBLE_HOME="${XDG_CONFIG_HOME}/ansible"

@@ -22,26 +22,26 @@ eDP-1 XPosition 2256x1504=40
 eDP-1 YPosition 2256x1504=90
 
 [Recent Files]
-File1[$e]=$HOME/dl/Resume202203191003.pdf
-File10[$e]=$HOME/docs/work/resumes/it/stephen_marks_resume.pdf
-File2[$e]=$HOME/docs/temp_dl.pdf
-File3[$e]=$HOME/docs/math/proofing/book.DVI - Daniel Solow - How to Read and Do Proofs_ An Introduction to Mathematical Thought Processes (2013, Wiley) - libgen.li.pdf
-File4[$e]=$HOME/docs/math/proofing/book_of_proof.pdf
-File5[$e]=$HOME/docs/math/proofing/Velleman. - How to Prove It_ A Structured Approach (2019).pdf
-File6[$e]=$HOME/docs/school/summer_25/aa_hist/discussions/discussion_1.md
-File7[$e]=$HOME/dl/educational_purpose.pdf
-File8[$e]=$HOME/docs/work/resumes/it/stephen_marks_admin_resume.pdf
-File9[$e]=$HOME/docs/work/resumes/it/stephen_marks_it_resume.pdf
-Name1[$e]=Resume202203191003.pdf
-Name10[$e]=stephen_marks_resume.pdf
-Name2[$e]=temp_dl.pdf
-Name3[$e]=book.DVI - Daniel Solow - How to Read and Do Proofs_ An Introduction to Mathematical Thought Processes (2013, Wiley) - libgen.li.pdf
-Name4[$e]=book_of_proof.pdf
-Name5[$e]=Velleman. - How to Prove It_ A Structured Approach (2019).pdf
-Name6[$e]=discussion_1.md
-Name7[$e]=educational_purpose.pdf
-Name8[$e]=stephen_marks_admin_resume.pdf
-Name9[$e]=stephen_marks_it_resume.pdf
+File1[$e]=$HOME/docs/work/resumes/customer_service/Stephen_Marks_resume.pdf
+File10[$e]=$HOME/docs/application+resume_stephen_marks.pdf
+File2[$e]=$HOME/docs/work/resumes/library/Stephen_Marks_library_resume.pdf
+File3[$e]=$HOME/docs/work/recs/Letter_of_Recommendation_Adriana_Ruvalcaba.pdf
+File4[$e]=$HOME/docs/work/recs/Letter_of_Recommendation_Celeste_West.pdf
+File5[$e]=$HOME/docs/school/fall_25/math_3000/ttam.pdf
+File6[$e]=$HOME/docs/school/fall_25/math_3500/cva.pdf
+File7[$e]=$HOME/output.pdf
+File8[$e]=$HOME/docs/student_assistant_application.pdf
+File9[$e]=$HOME/docs/student_assistant_application_stephen_marks.pdf
+Name1[$e]=Stephen_Marks_resume.pdf
+Name10[$e]=application+resume_stephen_marks.pdf
+Name2[$e]=Stephen_Marks_library_resume.pdf
+Name3[$e]=Letter_of_Recommendation_Adriana_Ruvalcaba.pdf
+Name4[$e]=Letter_of_Recommendation_Celeste_West.pdf
+Name5[$e]=ttam.pdf
+Name6[$e]=cva.pdf
+Name7[$e]=output.pdf
+Name8[$e]=student_assistant_application.pdf
+Name9[$e]=student_assistant_application_stephen_marks.pdf
 
 [calligra]
 DockerPlugins=calligra_docker_defaults,calligra_docker_stencils
